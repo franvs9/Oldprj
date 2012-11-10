@@ -3,12 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+    <ImageView
+        android:src="@drawable/ic_action_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#FF8000"
+        android:contentDescription="La lupa de los gayers.">
+        
+    </ImageView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/hello_world"
+        android:layout_margin="5dp"
+        android:textSize="35"
+        android:textStyle="bold"
+        android:text="Empezad a hacer aquí cosicas cacho gayers."
         tools:context=".MainActivity" />
 
 </RelativeLayout>
