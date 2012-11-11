@@ -4,23 +4,56 @@
     android:layout_height="match_parent" >
 
     <ImageView
-        android:src="@drawable/ic_action_search"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:background="#FF8000"
-        android:contentDescription="La lupa de los gayers.">
-        
+        android:contentDescription="La lupa de los gayers."
+        android:src="@drawable/ic_action_search" >
     </ImageView>
+
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_margin="5dp"
-        android:textSize="35"
-        android:textStyle="bold"
         android:text="Empezad a hacer aquí cosicas cacho gayers."
+        android:textSize="35dp"
+        android:textStyle="bold"
         tools:context=".MainActivity" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+	    <Button
+	        android:id="@+id/futbol_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="Futbol" />
+
+	    <Button
+	        android:id="@+id/f1_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="F1" />
+	    
+	    <Button
+	        android:id="@+id/basket_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="Basket" />
+	    
+	    <Button
+	        android:id="@+id/zaping_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="Zapping" />
+	    
+	 </LinearLayout>
 </RelativeLayout>

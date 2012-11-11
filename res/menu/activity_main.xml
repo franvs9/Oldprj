@@ -2,5 +2,6 @@
     <item android:id="@+id/menu_settings"
         android:title="@string/menu_settings"
         android:orderInCategory="100"
-        android:showAsAction="never" />
+        android:showAsAction="never" android:menuCategory="container" android:visible="true"/>
+    <item android:id="@+id/futbol_menu_item" android:menuCategory="container" android:onClick="@string/title_activity_futbol" android:title="Futbol" android:visible="true" android:checked="false" android:enabled="true" android:checkable="false" android:orderInCategory="1" android:titleCondensed="Futbol"></item>
 </menu>
