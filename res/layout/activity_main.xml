@@ -1,59 +1,35 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="#000000" >
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:background="#FF8000"
-        android:contentDescription="La lupa de los gayers."
-        android:src="@drawable/ic_action_search" >
-    </ImageView>
-
-    <TextView
-        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="5dp"
-        android:text="Empezad a hacer aquí cosicas cacho gayers."
-        android:textSize="35dp"
-        android:textStyle="bold"
-        tools:context=".MainActivity" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/hello_world"
+        android:src="@android:drawable/ic_menu_preferences" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+	    
 	    <Button
-	        android:id="@+id/futbol_button"
-	        android:layout_width="wrap_content"
+	        android:id="@+id/create_votation_button"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:text="Futbol" />
+	        android:text="Crear votación"
+	        android:layout_marginBottom="50dp" />
 
 	    <Button
-	        android:id="@+id/f1_button"
-	        android:layout_width="wrap_content"
+	        android:id="@+id/join_votation_button"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:text="F1" />
-	    
-	    <Button
-	        android:id="@+id/basket_button"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:text="Basket" />
-	    
-	    <Button
-	        android:id="@+id/zaping_button"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:text="Zapping" />
+	        android:text="Unirse a votación" />
 	    
 	 </LinearLayout>
 </RelativeLayout>

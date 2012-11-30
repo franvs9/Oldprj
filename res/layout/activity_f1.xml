@@ -3,21 +3,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-	<TextView
-	  android:layout_width="fill_parent"
-	  android:layout_height="wrap_content"
-	  android:gravity="center"
-	  android:text="@string/hello_world"
-	  tools:context=".MainActivity" />
-       
-	<Button android:id="@+id/BtnSi"
-		android:text="SI"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content" />
-     
-   <Button android:id="@+id/BtnNo"
-     	android:text=""
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/BtnNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:text="SI" />
+
+    <Button
+        android:id="@+id/BtnSi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="48dp"
+        android:text="SI" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:text="@string/hello_world"
+        tools:context=".MainActivity" />
 
 </RelativeLayout>

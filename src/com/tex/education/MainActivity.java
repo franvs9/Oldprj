@@ -1,7 +1,9 @@
 package com.tex.education;
 
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
@@ -9,26 +11,32 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
+	private Vibrator vibe;
+	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        Button fut = (Button)findViewById(R.id.futbol_button);
-        fut.setOnClickListener(new View.OnClickListener() {
+        vibe = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        
+        Button create_button = (Button)findViewById(R.id.create_votation_button);
+        create_button.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent myIntent = new Intent(MainActivity.this, Futbol.class);
 				MainActivity.this.startActivity(myIntent);
+				vibrate();
 			}
 		});
         
-        Button f1 = (Button)findViewById(R.id.futbol_button);
-        f1.setOnClickListener(new View.OnClickListener() {
+        Button join_button = (Button)findViewById(R.id.join_votation_button);
+        join_button.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent myIntent = new Intent(MainActivity.this, F1Activity.class);
 				MainActivity.this.startActivity(myIntent);
+				vibrate();
 			}
 		});
         
@@ -40,4 +48,11 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
     }
+    
+    /**
+     * Hace vibrar el telefono durante 95 ms
+     */
+    public void vibrate(){
+		vibe.vibrate(95);
+	}
 }
