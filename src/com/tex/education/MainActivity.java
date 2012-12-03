@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
         create_button.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent myIntent = new Intent(MainActivity.this, Join.class);
+				Intent myIntent = new Intent(MainActivity.this, Create.class);
 				MainActivity.this.startActivity(myIntent);
 				//vibrate();
 			}
@@ -34,12 +34,21 @@ public class MainActivity extends Activity {
         join_button.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent myIntent = new Intent(MainActivity.this, Create.class);
+				Intent myIntent = new Intent(MainActivity.this, Join.class);
 				MainActivity.this.startActivity(myIntent);
 				//vibrate();
 			}
 		});
         
+        Button settings_button = (Button)findViewById(R.id.menu_settings);
+        settings_button.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent myIntent = new Intent(MainActivity.this, Settings.class);
+				MainActivity.this.startActivity(myIntent);
+				//vibrate();
+			}
+		});
         
     }
 

@@ -7,5 +7,6 @@
     <string name="title_activity_futbol">Futbol</string>
     <string name="title_activity_f1">F1Activity</string>
     <string name="title_activity_answer">Answer</string>
+    <string name="title_activity_settings">Settings</string>
 
 </resources>
