@@ -18,15 +18,15 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        vibe = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        //vibe = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
         
         Button create_button = (Button)findViewById(R.id.create_votation_button);
         create_button.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent myIntent = new Intent(MainActivity.this, Futbol.class);
+				Intent myIntent = new Intent(MainActivity.this, Join.class);
 				MainActivity.this.startActivity(myIntent);
-				vibrate();
+				//vibrate();
 			}
 		});
         
@@ -34,9 +34,9 @@ public class MainActivity extends Activity {
         join_button.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent myIntent = new Intent(MainActivity.this, F1Activity.class);
+				Intent myIntent = new Intent(MainActivity.this, Create.class);
 				MainActivity.this.startActivity(myIntent);
-				vibrate();
+				//vibrate();
 			}
 		});
         
