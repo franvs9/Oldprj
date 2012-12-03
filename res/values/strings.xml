@@ -6,5 +6,6 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_futbol">Futbol</string>
     <string name="title_activity_f1">F1Activity</string>
+    <string name="title_activity_answer">Answer</string>
 
 </resources>
